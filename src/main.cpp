@@ -5,12 +5,17 @@
 #include <fstream>
 
  /**
- 
- * @brief removed gui and made the app completely console based 
+ * @brief Removed GUI Library and made the App completely console-based
  */
-
 using namespace std;
 
+/**
+ * @param readConfig defining the parameters of function
+ */
+
+/**
+ * @brief Explaining readConfig from reading values with file handling from config.txt
+ */
 void readConfig(long double &amount, long double &rate, int &months) {
     std::ifstream file("config.txt");
 
