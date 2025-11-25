@@ -1,7 +1,12 @@
 #include <iostream>
 #include <string>
-#include <cstdlib> // for atof/atoi
-#include "Loan.h"  // We assume your file is named Loan.h
+#include <cstdlib>
+#include "Loan.h"  
+
+ /**
+ 
+ * @brief removed gui and made the app completely console based 
+ */
 
 using namespace std;
 
@@ -55,8 +60,11 @@ int main(int argc, char* argv[]) {
     cout << "Monthly EMI: " << monthlyPayment << endl;
     cout << "-----------------------------------" << endl;
 
-    // Optional: If you implemented toString() in Loan.cpp, you can uncomment this:
-    // cout << loan.toString() << endl;
-
+    
     return 0;
+    
+      /**
+ 
+ * @author Ghulam Muhammad
+ */
 }

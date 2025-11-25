@@ -108,10 +108,13 @@ public:
   std::string toString();
 
 private:
-  long double amount_;
+  long double amount_;      /**
+ 
+ * @brief changed flaot to long double to handle over flow
+ */
   bool amountSet_;
 
-  long double initialPayment_;          //Changed float to long double for better accuracy
+  long double initialPayment_;          
 
   long double interest_;
   long double interestPeriodic_;
@@ -119,8 +122,11 @@ private:
 
   long double payment_;
   bool paymentSet_;
-
-  int periodTotal_;                   //The period doesn’t need a large range.
+                                             /**
+ 
+ * @brief here we did not change int to anyother data type because period does'nt require large range
+ */ 
+  int periodTotal_;                   
   bool periodTotalSet_;
 
   int periodElapsed_;
